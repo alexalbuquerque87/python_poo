@@ -7,10 +7,11 @@ class Pessoas:
         self.cpf = cpf
 
     def logar_sistema(self):
-        print(f'{self.nome} está logando no sistema')
+        print(f'{self.retorna_nome()} está logando no sistema')
+
+    def retorna_nome(self):
+        return self.nome
 
 p1 = Pessoas('João Silva', 23, '123.456.780-01')
-p2 = Pessoas('Pedro Paulo', 39, '098.765.432-10')
 
 p1.logar_sistema()
-p2.logar_sistema()
