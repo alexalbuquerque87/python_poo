@@ -1,4 +1,6 @@
 class Pessoas:
+
+    #__init__ sempre é chamado na classe
     def __init__(self, nome, idade, cpf):
         self.nome = nome
         self.idade = idade
