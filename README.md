@@ -9,3 +9,6 @@ __init__ sempre é chamado quando cria-se uma instância da classe
 
 ### 6_métodos_de_classe
 @classmethod
+
+### 7_métodos_estáticos
+@staticmethod

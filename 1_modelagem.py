@@ -19,6 +19,12 @@ class Pessoas:
         print(cls)
         cls.possui_boca = False
         return None
+    
+    @staticmethod
+    def is_adult(idade):
+        if idade > 18:
+            return True
+        return False
 
 p1 = Pessoas('João Silva', 23, '123.456.780-01')
 
@@ -26,6 +32,9 @@ p1.logar_sistema()
 print(p1.raca)
 
 #Método de classe
-print(Pessoas.possui_boca)
+print(f'possui_boca = {Pessoas.possui_boca}')
 Pessoas.andar()
-print(Pessoas.possui_boca)
+print(f'possui_boca = {Pessoas.possui_boca}')
+
+#Método estático
+print(f'is_adult = {Pessoas.is_adult(21)}')
