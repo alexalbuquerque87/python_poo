@@ -1,4 +1,5 @@
 class Pessoas:
+    possui_boca = True
     raca = 'Ser humano'
 
     #__init__ sempre é chamado na classe
@@ -12,8 +13,19 @@ class Pessoas:
 
     def retorna_nome(self):
         return self.nome
+    
+    @classmethod
+    def andar(cls):
+        print(cls)
+        cls.possui_boca = False
+        return None
 
 p1 = Pessoas('João Silva', 23, '123.456.780-01')
 
 p1.logar_sistema()
 print(p1.raca)
+
+#Método de classe
+print(Pessoas.possui_boca)
+Pessoas.andar()
+print(Pessoas.possui_boca)
