@@ -1,4 +1,4 @@
-# POO
+# POO - Python Full
 
 ### 2_modelagem
 Classes sempre são criadas com letras maiúsculas.
